@@ -1,0 +1,26 @@
+@mixin Flex($direction: row, $jContent: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jContent;
+    align-items: center;
+}
+
+@mixin Font($fSize: 3.15rem, $lHeight: 64px, $fWeight: 400) {
+    font-size: $fSize;
+    line-height: $lHeight;
+    font-weight: $fWeight;
+    color: #5f5f5f;
+}
+
+@mixin FontBg {
+    background: linear-gradient(180deg, #A56935 0%, #6F5539 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@mixin BgImg($bg_img, $bg_pos) {
+    background: url('@/assets/Items/' + $bg_img) no-repeat;
+    background-size: 100% 100%;
+    background-position: $bg_pos center;
+}
